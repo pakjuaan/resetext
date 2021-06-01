@@ -1,0 +1,58 @@
+MyGrid:
+    Create:
+    CreateWindow:
+<Create>:
+    name: "creates"
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        Button:
+            text: "Create"
+            font_size: 35
+            on_release: app.root.current ="CreateWindows"
+<CreateWindow>:
+    name:"CreateWindows"
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        cols:2
+        Label: 
+            text:"Patient's Name"
+        TextInput:
+            multinline: False
+        Label: 
+            text:"Doctors's Name"
+        TextInput:
+            multinline: False
+        Label: 
+            text:"Date"
+        TextInput:
+            multinline: False
+        Label: 
+            text:"Hospital"
+        TextInput:
+            multinline: False
+        Label: 
+            text:"Medicine"
+        TextInput:
+            multinline: False
+        Label: 
+            text:"Doctor's Field of expertise"
+        TextInput:
+            multinline: False
+        Label: 
+            text:"Patient's Diagnosis"
+        TextInput:
+            multinline: False
+        Label: 
+            text:"Notes"
+        TextInput:
+            multinline: False
+        Button:
+            text:"Submit"
+            font_size:35
+            on_release:        
+
+
+     
